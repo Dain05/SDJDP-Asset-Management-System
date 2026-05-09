@@ -1,0 +1,65 @@
+﻿@page
+
+@{
+    ViewData["Title"] = "About";
+}
+
+<style>
+    body {
+        font-family: Segoe UI;
+        background-color: #f4f6f9;
+    }
+
+    .container {
+        width: 80%;
+        margin: 40px auto;
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+        color: #1f4e79;
+    }
+
+    a {
+        text-decoration: none;
+        color: #1f4e79;
+        font-weight: bold;
+        margin-right: 20px;
+    }
+</style>
+
+<div class="container">
+
+    <h1>About SDJDP Asset Management Portal</h1>
+
+    <p>
+        The SDJDP Asset Management Portal was developed as part of the
+        CS244 Enterprise Application Development course.
+    </p>
+
+    <p>
+        The system was designed to manage and monitor ICT assets
+        using ASP.NET Core Razor Pages and SQL Server.
+    </p>
+
+    <p>
+        Features include:
+    </p>
+
+    <ul>
+        <li>Add Assets</li>
+        <li>Update Assets</li>
+        <li>Delete Assets</li>
+        <li>Search Assets</li>
+        <li>SQL Server Integration</li>
+    </ul>
+
+    <br />
+
+    <a href="/Assets">Home</a>
+    <a href="/Contact">Contact</a>
+
+</div>

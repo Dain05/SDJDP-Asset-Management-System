@@ -1,0 +1,58 @@
+﻿@page
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<style>
+    body {
+        background-color: #eef2f7;
+        font-family: Segoe UI;
+    }
+
+    .login-container {
+        width: 400px;
+        margin: 100px auto;
+        background: white;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        text-align: center;
+    }
+
+    h1 {
+        color: #1f4e79;
+    }
+
+    input {
+        width: 100%;
+        padding: 12px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    .login-btn {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        background-color: #1f4e79;
+        color: white;
+        border-radius: 6px;
+        text-decoration: none;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+</style>
+
+<div class="login-container">
+    <h1>SDJDP Asset Portal</h1>
+    <p>Please login to continue</p>
+
+    <input type="text" placeholder="Username" />
+    <input type="password" placeholder="Password" />
+
+    <a class="login-btn" href="/Assets">Login</a>
+</div>
