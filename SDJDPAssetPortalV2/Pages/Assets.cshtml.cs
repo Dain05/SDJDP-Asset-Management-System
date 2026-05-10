@@ -28,7 +28,7 @@ namespace SDJDPAssetPortalV2.Pages
             AssetRepository repo = new AssetRepository();
             repo.AddAsset(NewAsset);
 
-            return RedirectToPage();
+            return RedirectToPage("/Assets");
         }
 
         public IActionResult OnPostUpdate()
@@ -36,7 +36,7 @@ namespace SDJDPAssetPortalV2.Pages
             AssetRepository repo = new AssetRepository();
             repo.UpdateAsset(UpdateAssetData);
 
-            return RedirectToPage();
+            return RedirectToPage("/Assets");
         }
 
         public IActionResult OnPostDelete(string assetID)
@@ -44,7 +44,7 @@ namespace SDJDPAssetPortalV2.Pages
             AssetRepository repo = new AssetRepository();
             repo.DeleteAsset(assetID);
 
-            return RedirectToPage();
+            return RedirectToPage("/Assets");
         }
 
         public void OnPostSearch()

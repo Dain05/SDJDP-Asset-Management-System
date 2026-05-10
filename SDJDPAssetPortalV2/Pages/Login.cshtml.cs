@@ -15,7 +15,7 @@ namespace SDJDPAssetPortalV2.Pages
         {
             if (username == "admin" && password == "admin123")
             {
-                return RedirectToPage("/Index");
+                return RedirectToPage("/Assets");
             }
 
             ErrorMessage = "Invalid username or password.";
