@@ -28,17 +28,24 @@
 
 The SDJDP Asset Management System is a database-driven enterprise application developed using C#, Windows Forms, ASP.NET Core Razor Pages, and SQL Server.
 
-The purpose of the system is to manage and monitor ICT assets used within the SDJDP Document Centre through both a Desktop Application and a Web Application connected to the same SQL Server database.
+The system was designed to assist the SDJDP Document Centre with the management and monitoring of ICT assets through both a Desktop Application and a Web-Based Portal connected to the same SQL Server database.
+
+The project demonstrates enterprise application development concepts including authentication, CRUD operations, database integration, user interface design, and multi-platform access.
+
+---
+
+# System Objectives
 
 The system allows users to:
 
 - Add new assets
-- Update asset information
+- Update existing asset information
 - Delete asset records
 - Search for assets
-- View all assets
-- Store and retrieve data from SQL Server
+- View all asset records
+- Store and retrieve information from SQL Server
 - Access the system through a login interface
+- Manage assets through both Desktop and Web platforms
 
 ---
 
@@ -47,12 +54,14 @@ The system allows users to:
 ## Desktop Application
 - C#
 - Windows Forms
+- .NET
 - Visual Studio 2022
 
 ## Web Application
 - ASP.NET Core Razor Pages
 - HTML
 - CSS
+- Bootstrap
 
 ## Database
 - SQL Server
@@ -63,34 +72,35 @@ The system allows users to:
 
 ---
 
-# System Features
+# Desktop Application Features
 
-## Desktop Application Features
-
-- Login Form
-- MenuStrip
-- StatusStrip
-- NotifyIcon
-- DatePicker
+- Login Authentication
+- MDI Parent Form
+- MenuStrip Integration
+- StatusStrip Integration
+- NotifyIcon Component
+- DateTimePicker Component
 - GroupBox Controls
 - CRUD Operations
-- DataGridView Integration
 - Search Functionality
-- SQL Server Database Connectivity
+- SQL Server Connectivity
+- DataGridView Integration
 - User-Friendly Interface
+- Logged-In User Display
 
 ---
 
-## Web Application Features
+# Web Application Features
 
-- Login Page
-- Asset Management Page
+- Login Page Authentication
+- Asset Management Portal
 - About Page
 - Contact Page
 - CRUD Operations
+- Search Functionality
 - SQL Server Integration
-- Navigation Links
-- Modern User Interface
+- Navigation System
+- Responsive User Interface
 
 ---
 
@@ -168,19 +178,33 @@ GO
 2. Open SQL Server Management Studio.
 3. Execute the `database.sql` script.
 4. Run the Windows Forms project.
-5. Login using the system login form.
-6. Perform CRUD operations.
+5. Login using:
+
+```text
+Username: admin
+Password: admin123
+```
+
+6. Access the SDJDP Asset Management System.
+7. Perform CRUD operations.
 
 ---
 
 # How to Run the Web Application
 
-1. Open the web project in Visual Studio 2022.
+1. Open the ASP.NET Core project in Visual Studio 2022.
 2. Ensure SQL Server is running.
-3. Execute the `database.sql` script if needed.
+3. Execute the `database.sql` script if required.
 4. Run the ASP.NET Core Razor Pages project.
 5. The login page will open first.
-6. Click Login to access the Asset Management Portal.
+6. Login using:
+
+```text
+Username: admin
+Password: admin123
+```
+
+7. Access the Asset Management Portal.
 
 ---
 
@@ -196,6 +220,6 @@ https://github.com/Dain05/SDJDP-Asset-Management-System
 
 # Conclusion
 
-The SDJDP Asset Management System successfully demonstrates the use of Enterprise Application Development concepts using Desktop and Web technologies integrated with SQL Server.
+The SDJDP Asset Management System successfully demonstrates Enterprise Application Development concepts using Desktop and Web technologies integrated with SQL Server.
 
-The project provides a practical solution for managing ICT assets while demonstrating CRUD functionality, database connectivity, modern interface design, and enterprise-level application structure.
+The project provides a practical solution for managing ICT assets while demonstrating authentication, CRUD functionality, database connectivity, responsive interface design, and enterprise-level application structure.
