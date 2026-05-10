@@ -55,7 +55,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(10, 6);
+            label1.Location = new Point(10, 31);
             label1.Name = "label1";
             label1.Size = new Size(63, 20);
             label1.TabIndex = 0;
@@ -64,7 +64,7 @@
             // 
             // txtAssetID
             // 
-            txtAssetID.Location = new Point(79, 6);
+            txtAssetID.Location = new Point(79, 35);
             txtAssetID.Name = "txtAssetID";
             txtAssetID.Size = new Size(79, 27);
             txtAssetID.TabIndex = 1;
@@ -72,7 +72,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(178, 6);
+            label2.Location = new Point(164, 35);
             label2.Name = "label2";
             label2.Size = new Size(79, 20);
             label2.TabIndex = 2;
@@ -80,7 +80,7 @@
             // 
             // txtAssetType
             // 
-            txtAssetType.Location = new Point(263, 6);
+            txtAssetType.Location = new Point(249, 36);
             txtAssetType.Name = "txtAssetType";
             txtAssetType.Size = new Size(85, 27);
             txtAssetType.TabIndex = 3;
@@ -88,7 +88,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(354, 6);
+            label3.Location = new Point(344, 35);
             label3.Name = "label3";
             label3.Size = new Size(104, 20);
             label3.TabIndex = 4;
@@ -96,7 +96,7 @@
             // 
             // txtSerialNumber
             // 
-            txtSerialNumber.Location = new Point(464, 3);
+            txtSerialNumber.Location = new Point(454, 39);
             txtSerialNumber.Name = "txtSerialNumber";
             txtSerialNumber.Size = new Size(85, 27);
             txtSerialNumber.TabIndex = 5;
@@ -104,23 +104,24 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(555, 13);
+            label4.Location = new Point(566, 39);
             label4.Name = "label4";
             label4.Size = new Size(89, 20);
             label4.TabIndex = 6;
             label4.Text = "Department";
+            label4.Click += label4_Click;
             // 
             // txtDepartment
             // 
-            txtDepartment.Location = new Point(658, 3);
+            txtDepartment.Location = new Point(661, 39);
             txtDepartment.Name = "txtDepartment";
-            txtDepartment.Size = new Size(125, 27);
+            txtDepartment.Size = new Size(113, 27);
             txtDepartment.TabIndex = 7;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(789, 13);
+            label5.Location = new Point(792, 42);
             label5.Name = "label5";
             label5.Size = new Size(49, 20);
             label5.TabIndex = 8;
@@ -131,14 +132,15 @@
             cmbStatus.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbStatus.FormattingEnabled = true;
             cmbStatus.Items.AddRange(new object[] { "Available", "In Use", "Under Maintenance", "Damaged", "Retired" });
-            cmbStatus.Location = new Point(844, 13);
+            cmbStatus.Location = new Point(847, 38);
             cmbStatus.Name = "cmbStatus";
             cmbStatus.Size = new Size(93, 28);
             cmbStatus.TabIndex = 9;
+            cmbStatus.SelectedIndexChanged += cmbStatus_SelectedIndexChanged;
             // 
             // btnClear
             // 
-            btnClear.Location = new Point(163, 58);
+            btnClear.Location = new Point(178, 118);
             btnClear.Name = "btnClear";
             btnClear.Size = new Size(94, 29);
             btnClear.TabIndex = 11;
@@ -148,7 +150,7 @@
             // 
             // btnSearch
             // 
-            btnSearch.Location = new Point(761, 58);
+            btnSearch.Location = new Point(697, 118);
             btnSearch.Name = "btnSearch";
             btnSearch.Size = new Size(77, 29);
             btnSearch.TabIndex = 12;
@@ -198,20 +200,20 @@
             dgvAssets.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvAssets.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvAssets.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5 });
-            dgvAssets.Location = new Point(10, 164);
+            dgvAssets.Location = new Point(10, 184);
             dgvAssets.MultiSelect = false;
             dgvAssets.Name = "dgvAssets";
             dgvAssets.ReadOnly = true;
             dgvAssets.RowHeadersWidth = 51;
             dgvAssets.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvAssets.Size = new Size(943, 188);
+            dgvAssets.Size = new Size(943, 208);
             dgvAssets.TabIndex = 13;
             dgvAssets.CellClick += dgvAssets_CellClick;
             dgvAssets.CellContentClick += dgvAssets_CellContentClick;
             // 
             // btnAdd
             // 
-            btnAdd.Location = new Point(12, 58);
+            btnAdd.Location = new Point(10, 118);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(94, 29);
             btnAdd.TabIndex = 10;
@@ -221,7 +223,7 @@
             // 
             // btnUpdate
             // 
-            btnUpdate.Location = new Point(550, 58);
+            btnUpdate.Location = new Point(566, 118);
             btnUpdate.Name = "btnUpdate";
             btnUpdate.Size = new Size(94, 29);
             btnUpdate.TabIndex = 14;
@@ -231,7 +233,7 @@
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(354, 58);
+            btnDelete.Location = new Point(354, 118);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(94, 29);
             btnDelete.TabIndex = 15;

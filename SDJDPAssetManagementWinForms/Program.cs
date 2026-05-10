@@ -11,7 +11,7 @@ namespace SDJDPAssetManagementWinForms
 
             if (loginForm.ShowDialog() == DialogResult.OK)
             {
-                Application.Run(new Form1(loginForm.LoggedInUser));
+                Application.Run(new MainForm(loginForm.LoggedInUser));
             }
         }
     }
